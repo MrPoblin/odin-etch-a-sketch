@@ -10,13 +10,16 @@ function fillGrid(width){
     for(let i = 0; i < gridNum; i++){
         let square = document.createElement("div");
         square.style.flexBasis = `${String(size / width)}px`;
+        square.style.opacity = 0;
         square.className = "square";
         square.addEventListener("mouseover", () =>{
-            square.style.backgroundColor = "black";
-        })
+            square.style.opacity =  parseFloat(square.style.opacity) + 0.1;
+            square.style.backgroundColor = `#${Math.floor(Math.random()*16777215).toString(16)}`;
+        });
         parent.appendChild(square);
     }
 }
+
 
 const button = document.querySelector(".size");
 button.addEventListener("click", () =>{
@@ -32,7 +35,7 @@ button.addEventListener("click", () =>{
         fillGrid(newSize);
         }
     }
-    else if(newSize === 0){
+    else{
         alert("Enter a positive number!");
     }
 })

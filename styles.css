@@ -1,3 +1,8 @@
+h1{
+    margin: 16px 20px;
+    font-family: 'Segoe UI', Verdana, sans-serif;
+}
+
 .parent{
     display: flex;
     border: 6px solid #000000;
@@ -5,4 +10,14 @@
     width: 960px;
     height: 960px;
     flex-wrap: wrap;
+}
+
+.size{
+    color: #f9faf8;
+    background-color: #3882f6;
+    width: 100px;
+    padding: 6px 0px;
+    border-radius: 6px;
+    font-weight: 500;
+    margin: 0px 20px;
 }
