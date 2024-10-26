@@ -1,0 +1,8 @@
+.parent{
+    display: flex;
+    border: 6px solid #000000;
+    margin: 20px;
+    width: 960px;
+    height: 960px;
+    flex-wrap: wrap;
+}
